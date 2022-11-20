@@ -1,0 +1,48 @@
+.NavMenu {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 15vw;
+    background-color: grey;
+    animation-name: SlideIn;
+    animation-duration: 1.5s;
+    horizontally-align: center;
+}
+
+@keyframes SlideIn {
+    0% {margin-left: -15vw;}
+    100% {margin-left: 0;}
+}
+
+.NavMenu ul {
+    list-style: none;
+    margin-top: 60px;
+}
+
+.NavMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+.MenuIcon {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 1;
+    position: absolute;
+    filter: invert(100%);
+    left: 13px;
+    top: 9px;
+    font-size: 30px; //icon size
+    width:65px;
+    cursor: pointer;
+    transition: font-size .5s;
+}
+
+.MenuIcon:hover {
+    font-size: 40px;
+    transition: font-size .5s;
+}
