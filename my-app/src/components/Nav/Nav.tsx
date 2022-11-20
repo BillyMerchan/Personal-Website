@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import './Nav.scss';
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { Outlet, Link } from 'react-router-dom'
 
 const Nav: FC = () => {
   return (
@@ -14,10 +15,10 @@ function NavMenu(){
     return(
         <div className="NavMenu">
             <ul>
-                <li><a href="/account">Home</a></li>
-                <li><a href="/account">Projects</a></li>
-                <li><a href="/account">Blog</a></li>
-                <li><a href="/account">Contact</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/Projects">Projects</Link></li>
+                <li><Link to="/Blog">Blog</Link></li>
+                <li><Link to="/Contact">Contact</Link></li>
             </ul>
         </div>
     )
