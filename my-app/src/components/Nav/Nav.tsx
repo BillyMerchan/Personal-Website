@@ -17,7 +17,6 @@ function NavMenu(){
                 <li><a href="/account">Account</a></li>
                 <li><a href="/account">Account</a></li>
                 <li><a href="/account">Account</a></li>
-                <li><a href="/account">Account</a></li>
             </ul>
         </div>
     )

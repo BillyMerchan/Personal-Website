@@ -1,16 +1,16 @@
 import React from 'react';
 import './styles/App.scss';
 import Nav from './components/Nav/Nav'
+import Tagline from './components/Tagline/Tagline'
 
 function App() {
   return (
     <div className="App">
     <Nav/>
       <header className="App-header">
-        <h1>Hi! I'm 8illy </h1>
+        <h1 className="Title">Billy Merchan</h1>
+        <Tagline/>
       </header>
-      <body>
-      </body>
     </div>
   );
 }

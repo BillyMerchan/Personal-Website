@@ -1,0 +1,69 @@
+.Tagline {
+    position: absolute;
+    top:37%;
+    left:8.3%;
+}
+
+.DynamicContainer {
+    display: inline-flex;
+}
+
+.DynamicTextList {
+    list-style: none;
+    overflow: hidden;
+    height:55px;
+
+}
+
+.DynamicTextList li{
+    font-size: 50px;
+    position: relative;
+    color: black;
+    font-weight: 500;
+    animation-name: swap;
+    animation-duration:7.6s; // # of words * length of typing animation
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    top: 0;
+}
+
+.DynamicTextList li span{
+    position: relative;
+
+}
+
+.DynamicTextList li span::after {
+    background-color: #ffe08c; //bg color of main app to mask word
+    border-left-width: 17px;
+    border-left-style:solid;
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    animation-name: typing;
+    animation-duration: 1.9s;
+    animation-timing-function: steps(14);
+    animation-iteration-count: infinite;
+    border-color: black;
+}
+
+@keyframes swap { //Swapping dynamic text by shifting list up and hiding overflow
+    100%{top: -250px;}
+}
+
+@keyframes typing { //Mimicking typing by using a border of a span::after
+    0%{}
+    50%{
+        left:100%;
+        margin-left: 3px;
+        border-left-style:solid;
+    }
+    75%{
+        border-style:none;
+    }
+    100%{
+        left:100%;
+        margin-left: 3px;
+    }
+}
