@@ -3,37 +3,44 @@
     display: flex;
     left: 0;
     top: 0;
-    height: 100vh;
-    width: 15vw;
-    background-color: grey;
-    animation-name: SlideIn;
-    animation-duration: 1.5s;
-    horizontally-align: center;
+    height: 7vh;
+    width: 100vw;
+    background-color: black;
+    animation-name: SlideDown;
+    animation-duration: .4s;
 }
 
-@keyframes SlideIn {
-    0% {margin-left: -15vw;}
-    100% {margin-left: 0;}
+@keyframes SlideDown {
+    0% {margin-top: -5vw;}
+    100% {margin-top: 0;}
 }
 
 .NavMenu ul {
+    padding-top:1.5vh;
+    margin-top:0;
     list-style: none;
-    margin-top: 60px;
+    vertical-align: center;
+    padding-left:80px;
+}
+
+.NavMenu li {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .NavMenu a {
     text-decoration: none;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
 }
 
-.MenuIcon {
+.MenuIconOpen {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
     z-index: 1;
     position: absolute;
-    filter: invert(100%);
     left: 13px;
     top: 9px;
     font-size: 30px; //icon size
@@ -42,7 +49,27 @@
     transition: font-size .5s;
 }
 
-.MenuIcon:hover {
+.MenuIconOpen:hover {
+    font-size: 40px;
+    transition: font-size .5s;
+}
+
+.MenuIconClosed {
+    filter:invert(100%);
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 1;
+    position: absolute;
+    left: 13px;
+    top: 9px;
+    font-size: 30px; //icon size
+    width:65px;
+    cursor: pointer;
+    transition: font-size .5s;
+}
+
+.MenuIconClosed:hover {
     font-size: 40px;
     transition: font-size .5s;
 }
