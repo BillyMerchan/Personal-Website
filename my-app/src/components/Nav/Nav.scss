@@ -15,10 +15,9 @@
     100% {margin-top: 0;}
 }
 
-.NavMenu ul {
-    padding-top:1.5vh;
-    margin-top:0;
+.NavMenu ul  {
     list-style: none;
+    margin-top:14px;
     vertical-align: center;
     padding-left:80px;
 }
@@ -37,7 +36,7 @@
 
 .MenuIconOpen {
     justify-content: center;
-    align-items: center;
+    align-items: ceter;
     padding-top: 10px;
     z-index: 1;
     position: absolute;
