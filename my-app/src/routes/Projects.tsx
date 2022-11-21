@@ -20,7 +20,7 @@ function Projects() {
 function ProjectCards() {
   return(
     <div className="Grid">
-      <Card title="Hackathons" img={Hackathon_Thumb} redirect="Hackathons"/>
+      <Card title="Hackathons" img={Hackathon_Thumb} redirect="/Projects/Hackathons"/>
       <Card title=""/>
       <Card title=""/>
       <Card title=""/>
