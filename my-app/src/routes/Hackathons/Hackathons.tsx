@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hackathons.scss';
-import Nav from '../components/Nav/Nav'
+import Nav from '../../components/Nav/Nav'
 import { Outlet, Link } from 'react-router-dom'
 
 function Hackathons() {

@@ -1,8 +1,6 @@
 import React from 'react';
 //import './styles/App.scss';
-import Nav from '../components/Nav/Nav'
-import Tagline from '../components/Tagline/Tagline'
-import Links from '../components/Links/Links'
+import Nav from '../../components/Nav/Nav'
 
 function Blog() {
   return (
@@ -10,8 +8,6 @@ function Blog() {
     <Nav/>
       <header className="App-header">
         <h1 className="Title">Blogs</h1>
-        <Tagline/>
-        <Links/>
       </header>
     </div>
   );

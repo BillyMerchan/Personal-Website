@@ -1,8 +1,8 @@
 import React from 'react';
 //import './styles/App.scss';
-import Nav from '../components/Nav/Nav'
-import Tagline from '../components/Tagline/Tagline'
-import Links from '../components/Links/Links'
+import Nav from '../../components/Nav/Nav'
+import Tagline from '../../components/Tagline/Tagline'
+import Links from '../../components/Links/Links'
 
 function Contact() {
   return (

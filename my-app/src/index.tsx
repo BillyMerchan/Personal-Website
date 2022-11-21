@@ -4,10 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 
 import App from './App';
-import Projects from './routes/Projects';
-import Blog from './routes/Blog';
-import Contact from './routes/Contact';
-import Hackathons from './routes/Hackathons';
+import Projects from './routes/Projects/Projects';
+import Blog from './routes/Blog/Blog';
+import Contact from './routes/Contact/Contact';
+import Hackathons from './routes/Hackathons/Hackathons';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

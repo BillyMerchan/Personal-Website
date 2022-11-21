@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/Projects.scss';
-import Nav from '../components/Nav/Nav'
+import './Projects.scss';
+import Nav from '../../components/Nav/Nav'
 import { Outlet, Link } from 'react-router-dom'
 
-import Hackathon_Thumb from '../images/Hackathon_Thumb.png'
+import Hackathon_Thumb from '../../images/Hackathon_Thumb.png'
 
 function Projects() {
   return (
