@@ -4,17 +4,15 @@ import Nav from '../../components/Nav/Nav'
 import Tagline from '../../components/Tagline/Tagline'
 import Links from '../../components/Links/Links'
 
-function Contact() {
+function About() {
   return (
-    <div className="App">
+    <div className="SubPage">
     <Nav/>
       <header className="App-header">
-        <h1 className="Title">Contact</h1>
-        <Tagline/>
-        <Links/>
+        <h1 className="subPageTitle">About Me</h1>
       </header>
     </div>
   );
 }
 
-export default Contact;
+export default About;

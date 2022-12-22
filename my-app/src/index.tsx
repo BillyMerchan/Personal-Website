@@ -6,7 +6,7 @@ import './index.css';
 import App from './App';
 import Projects from './routes/Projects/Projects';
 import Blog from './routes/Blog/Blog';
-import Contact from './routes/Contact/Contact';
+import About from './routes/About/About';
 import Hackathons from './routes/Hackathons/Hackathons';
 
 const root = ReactDOM.createRoot(
@@ -20,7 +20,7 @@ root.render(
         <Route path="Projects" element={<Projects/>}/>
         <Route path="Projects/Hackathons" element={<Hackathons/>}/>
         <Route path="Blog" element={<Blog/>} />
-        <Route path="Contact" element={<Contact/>} />
+        <Route path="About" element={<About/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
