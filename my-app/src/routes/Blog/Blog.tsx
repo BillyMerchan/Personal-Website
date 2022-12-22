@@ -1,14 +1,12 @@
 import React from 'react';
-//import './styles/App.scss';
+import './Blog.scss';
 import Nav from '../../components/Nav/Nav'
 
 function Blog() {
   return (
-    <div className="App">
+    <div className="SubPage">
     <Nav/>
-      <header className="App-header">
-        <h1 className="Title">Blogs</h1>
-      </header>
+        <h1 className="subPageTitle">Blogs</h1>
     </div>
   );
 }
